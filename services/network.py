@@ -294,7 +294,7 @@ class NetworkClient(Service):
                 x
                 for x in devices
                 if x.get_device_type() == device_type
-                and x.get_active_connection() is not None
+                # and x.get_active_connection() is not None
             ),
             None,
         )
@@ -315,7 +315,7 @@ class NetworkClient(Service):
     def connect_wifi_bssid(self, bssid):
         # We are using nmcli here, idk im lazy
         exec_shell_command_async(
-            f"nmcli device wifi connect {bssid}", lambda *args: print(args)
+            f"nmcli --ask device wifi connect {bssid}", lambda *args: print(args)
         )
 
     @Property(str, "readable")
