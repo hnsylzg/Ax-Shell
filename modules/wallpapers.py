@@ -83,6 +83,7 @@ class WallpaperSelector(Box):
 
         self.schemes = {
             "scheme-tonal-spot": "Tonal Spot",
+            "scheme-vibrant": "Vibrant",
             "scheme-content": "Content",
             "scheme-expressive": "Expressive",
             "scheme-fidelity": "Fidelity",
