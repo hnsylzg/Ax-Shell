@@ -382,7 +382,7 @@ class Notch(Window):
 
         else:
             self.compact.set_size_request(260, 40)
-            self.launcher.set_size_request(480, 244)
+            self.launcher.set_size_request(480, 344)
             self.tmux.set_size_request(480, 244)
             self.cliphist.set_size_request(480, 244)
             self.dashboard.set_size_request(1093, 472)
